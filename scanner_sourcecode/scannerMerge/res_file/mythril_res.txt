@@ -1,0 +1,34 @@
+==== External call ====
+SWC ID: 107
+Type: Informational
+Contract: LockToken
+Function name: tokenBalance()
+PC address: 1720
+Estimated Gas Usage: 1541 - 2342
+The contract executes a function call to an external address. Verify that the code at this address is trusted and immutable.
+--------------------
+In file: /home/minelab/zhaofangyu/scannerMerge_platform/contracts/sol/0xffe39c24ffb77e82e8719eba9822d03ba0f692f9.sol:86
+
+ner returns (bool){
+      re
+
+--------------------
+
+==== Integer Overflow ====
+SWC ID: 101
+Type: Warning
+Contract: LockToken
+Function name: tokenBalance()
+PC address: 1761
+Estimated Gas Usage: 2309 - 37203
+This binary add operation can result in integer overflow.
+
+--------------------
+In file: /home/minelab/zhaofangyu/scannerMerge_platform/contracts/sol/0xffe39c24ffb77e82e8719eba9822d03ba0f692f9.sol:86
+
+ner returns (bool){
+      re
+
+--------------------
+
+

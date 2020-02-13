@@ -1,0 +1,19 @@
+INFO:Detectors:[92m
+Contract 'token' (scannerMerge_platform/contracts/sol/0xffe39c24ffb77e82e8719eba9822d03ba0f692f9.sol#32-38) is not in CapWords
+Parameter '_beneficiary' of LockToken. (scannerMerge_platform/contracts/sol/0xffe39c24ffb77e82e8719eba9822d03ba0f692f9.sol#78-79) is not in mixedCase
+Variable 'LockToken.token_reward' (scannerMerge_platform/contracts/sol/0xffe39c24ffb77e82e8719eba9822d03ba0f692f9.sol#70-71) is not in mixedCase
+Variable 'LockToken.start_time' (scannerMerge_platform/contracts/sol/0xffe39c24ffb77e82e8719eba9822d03ba0f692f9.sol#75) is not in mixedCase
+Variable 'LockToken.end_time' (scannerMerge_platform/contracts/sol/0xffe39c24ffb77e82e8719eba9822d03ba0f692f9.sol#75-77) is not in mixedCase
+Reference: https://github.com/trailofbits/slither/wiki/Vulnerabilities-Description#conformance-to-solidity-naming-conventions[0m
+INFO:Detectors:[93m
+LockToken.release (scannerMerge_platform/contracts/sol/0xffe39c24ffb77e82e8719eba9822d03ba0f692f9.sol#102-108) does not use the value returned by external calls:
+	-token_reward.transfer(beneficiary,token_amount) (scannerMerge_platform/contracts/sol/0xffe39c24ffb77e82e8719eba9822d03ba0f692f9.sol#106-108)
+Reference: https://github.com/trailofbits/slither/wiki/Vulnerabilities-Description#unused-return[0m
+INFO:Detectors:[92m
+token.balanceOf (scannerMerge_platform/contracts/sol/0xffe39c24ffb77e82e8719eba9822d03ba0f692f9.sol#32-33) should be declared external
+token.transfer (scannerMerge_platform/contracts/sol/0xffe39c24ffb77e82e8719eba9822d03ba0f692f9.sol#33-38) should be declared external
+Ownable.transferOwnership (scannerMerge_platform/contracts/sol/0xffe39c24ffb77e82e8719eba9822d03ba0f692f9.sol#58-66) should be declared external
+LockToken.lock (scannerMerge_platform/contracts/sol/0xffe39c24ffb77e82e8719eba9822d03ba0f692f9.sol#87-96) should be declared external
+LockToken.release (scannerMerge_platform/contracts/sol/0xffe39c24ffb77e82e8719eba9822d03ba0f692f9.sol#102-108) should be declared external
+Reference: https://github.com/trailofbits/slither/wiki/Vulnerabilities-Description#public-function-that-could-be-declared-as-external[0m
+INFO:Slither:/home/minelab/zhaofangyu/scannerMerge_platform/contracts/sol/0xffe39c24ffb77e82e8719eba9822d03ba0f692f9.sol analyzed (4 contracts), 11 result(s) found

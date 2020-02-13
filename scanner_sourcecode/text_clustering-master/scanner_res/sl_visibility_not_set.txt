@@ -1,0 +1,12 @@
+INFO:Detectors:[91m
+HashForEther._sendWinnings (test_contracts/visibility_not_set.sol#17-19) sends eth to arbirary user
+	Dangerous calls:
+	- msg.sender.transfer(this.balance) (test_contracts/visibility_not_set.sol#18)
+Reference: https://github.com/trailofbits/slither/wiki/Vulnerabilities-Description#functions-that-send-ether-to-arbitrary-destinations[0m
+INFO:Detectors:[92m
+Function 'HashForEther._sendWinnings' (test_contracts/visibility_not_set.sol#17-19) is not in mixedCase
+Reference: https://github.com/trailofbits/slither/wiki/Vulnerabilities-Description#conformance-to-solidity-naming-conventions[0m
+INFO:Detectors:[92m
+HashForEther.withdrawWinnings (test_contracts/visibility_not_set.sol#11-15) should be declared external
+Reference: https://github.com/trailofbits/slither/wiki/Vulnerabilities-Description#public-function-that-could-be-declared-as-external[0m
+INFO:Slither:test_contracts/visibility_not_set.sol analyzed (1 contracts), 3 result(s) found

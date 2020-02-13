@@ -1,0 +1,16 @@
+==== Ether thief ====
+SWC ID: 105
+Type: Warning
+Contract: HashForEther
+Function name: _sendWinnings()
+PC address: 189
+Estimated Gas Usage: 596 - 877
+Arbitrary senders other than the contract creator can withdraw ETH from the contract account without previously having sent an equivalent amount of ETH to it. This is likely to be a vulnerability.
+--------------------
+In file: test_contracts/visibility_not_set.sol:18
+
+msg.sender.transfer(this.balance)
+
+--------------------
+
+

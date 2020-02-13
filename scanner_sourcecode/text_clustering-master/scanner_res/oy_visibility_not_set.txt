@@ -1,0 +1,18 @@
+WARNING:root:You are using solc version 0.4.24, The latest supported version is 0.4.19
+INFO:root:contract test_contracts/visibility_not_set.sol:HashForEther:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 93.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:Flow1
+test_contracts/visibility_not_set.sol:18:10: Warning: Transaction-Ordering Dependency.
+         msg.sender.transfer(this.balance)
+Flow2
+test_contracts/visibility_not_set.sol:18:10: Warning: Transaction-Ordering Dependency.
+         msg.sender.transfer(this.balance)
+INFO:symExec:	====== Analysis Completed ======
